@@ -1,0 +1,227 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+D:\桌面\任务\机器人\调试\001\普罗米修斯.uvproj
+Project File Date:  05/13/2015
+
+<h2>Output:</h2>
+Build target '目标 1'
+assembling STARTUP.A51...
+compiling main.c...
+MAIN.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+compiling 1602.c...
+1602.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+compiling Motor.c...
+MOTOR.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+compiling Timer.c...
+TIMER.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+compiling Buzzer.c...
+BUZZER.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_WRITE_CHAR?1602
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_10US?MOTOR
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_GORIGHT_90?MOTOR
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_GOLEFT_180?MOTOR
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_BUZZER?BUZZER
+Program Size: data=28.0 xdata=0 code=1555
+creating hex file from "普罗米修斯"...
+"普罗米修斯" - 0 Error(s), 10 Warning(s).
+Build target '目标 1'
+assembling STARTUP.A51...
+compiling main.c...
+MAIN.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+MOTOR.H(33): error C141: syntax error near 'sbit'
+MAIN.C(101): error C202: 'Sensor1': undefined identifier
+compiling 1602.c...
+1602.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+compiling Motor.c...
+MOTOR.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+MOTOR.H(33): error C141: syntax error near 'sbit'
+MOTOR.C(222): error C141: syntax error near 'sbit'
+MOTOR.C(224): error C202: 's1': undefined identifier
+MOTOR.C(225): error C202: 's1': undefined identifier
+MOTOR.C(227): error C202: 's1': undefined identifier
+MOTOR.C(228): error C202: 's1': undefined identifier
+MOTOR.C(229): error C202: 's1': undefined identifier
+MOTOR.C(230): error C202: 's1': undefined identifier
+MOTOR.C(232): error C202: 's1': undefined identifier
+MOTOR.C(233): error C202: 's1': undefined identifier
+MOTOR.C(234): error C202: 's1': undefined identifier
+MOTOR.C(235): error C202: 's1': undefined identifier
+compiling Timer.c...
+TIMER.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+compiling Buzzer.c...
+BUZZER.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+MOTOR.H(33): error C141: syntax error near 'sbit'
+Target not created
+Build target '目标 1'
+assembling STARTUP.A51...
+compiling main.c...
+MAIN.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+MOTOR.H(33): error C141: syntax error near 'sbit'
+MAIN.C(101): error C202: 'Sensor1': undefined identifier
+compiling 1602.c...
+1602.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+compiling Motor.c...
+MOTOR.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+MOTOR.H(33): error C141: syntax error near 'sbit'
+MOTOR.C(222): error C141: syntax error near 'sbit'
+MOTOR.C(224): error C202: 's1': undefined identifier
+MOTOR.C(225): error C202: 's1': undefined identifier
+MOTOR.C(227): error C202: 's1': undefined identifier
+MOTOR.C(228): error C202: 's1': undefined identifier
+MOTOR.C(229): error C202: 's1': undefined identifier
+MOTOR.C(230): error C202: 's1': undefined identifier
+MOTOR.C(232): error C202: 's1': undefined identifier
+MOTOR.C(233): error C202: 's1': undefined identifier
+MOTOR.C(234): error C202: 's1': undefined identifier
+MOTOR.C(235): error C202: 's1': undefined identifier
+compiling Timer.c...
+TIMER.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+compiling Buzzer.c...
+BUZZER.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+MOTOR.H(33): error C141: syntax error near 'sbit'
+Target not created
+Build target '目标 1'
+assembling STARTUP.A51...
+compiling main.c...
+MAIN.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+MOTOR.H(33): error C141: syntax error near 'sbit'
+MAIN.C(101): error C202: 'Sensor1': undefined identifier
+compiling 1602.c...
+1602.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+compiling Motor.c...
+MOTOR.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+MOTOR.H(33): error C141: syntax error near 'sbit'
+MOTOR.C(222): error C141: syntax error near 'sbit'
+MOTOR.C(224): error C202: 's1': undefined identifier
+MOTOR.C(225): error C202: 's1': undefined identifier
+MOTOR.C(227): error C202: 's1': undefined identifier
+MOTOR.C(228): error C202: 's1': undefined identifier
+MOTOR.C(229): error C202: 's1': undefined identifier
+MOTOR.C(230): error C202: 's1': undefined identifier
+MOTOR.C(232): error C202: 's1': undefined identifier
+MOTOR.C(233): error C202: 's1': undefined identifier
+MOTOR.C(234): error C202: 's1': undefined identifier
+MOTOR.C(235): error C202: 's1': undefined identifier
+compiling Timer.c...
+TIMER.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+compiling Buzzer.c...
+BUZZER.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+MOTOR.H(33): error C141: syntax error near 'sbit'
+Target not created
+Build target '目标 1'
+assembling STARTUP.A51...
+compiling main.c...
+MAIN.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+MOTOR.H(33): error C141: syntax error near 'sbit'
+compiling 1602.c...
+1602.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+compiling Motor.c...
+MOTOR.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+MOTOR.H(33): error C141: syntax error near 'sbit'
+MOTOR.C(222): error C141: syntax error near 'sbit'
+MOTOR.C(224): error C202: 's1': undefined identifier
+MOTOR.C(225): error C202: 's1': undefined identifier
+MOTOR.C(227): error C202: 's1': undefined identifier
+MOTOR.C(228): error C202: 's1': undefined identifier
+MOTOR.C(229): error C202: 's1': undefined identifier
+MOTOR.C(230): error C202: 's1': undefined identifier
+MOTOR.C(232): error C202: 's1': undefined identifier
+MOTOR.C(233): error C202: 's1': undefined identifier
+MOTOR.C(234): error C202: 's1': undefined identifier
+MOTOR.C(235): error C202: 's1': undefined identifier
+compiling Timer.c...
+TIMER.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+compiling Buzzer.c...
+BUZZER.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+MOTOR.H(33): error C141: syntax error near 'sbit'
+Target not created
+Build target '目标 1'
+assembling STARTUP.A51...
+compiling main.c...
+MAIN.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+MOTOR.H(33): error C141: syntax error near 'sbit'
+compiling 1602.c...
+1602.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+compiling Motor.c...
+MOTOR.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+MOTOR.H(33): error C141: syntax error near 'sbit'
+MOTOR.C(222): error C141: syntax error near 'sbit'
+MOTOR.C(224): error C202: 's1': undefined identifier
+MOTOR.C(225): error C202: 's1': undefined identifier
+MOTOR.C(227): error C202: 's1': undefined identifier
+MOTOR.C(228): error C202: 's1': undefined identifier
+MOTOR.C(229): error C202: 's1': undefined identifier
+MOTOR.C(230): error C202: 's1': undefined identifier
+MOTOR.C(232): error C202: 's1': undefined identifier
+MOTOR.C(233): error C202: 's1': undefined identifier
+MOTOR.C(234): error C202: 's1': undefined identifier
+MOTOR.C(235): error C202: 's1': undefined identifier
+compiling Timer.c...
+TIMER.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+compiling Buzzer.c...
+BUZZER.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+MOTOR.H(33): error C141: syntax error near 'sbit'
+Target not created
+Build target '目标 1'
+assembling STARTUP.A51...
+compiling main.c...
+MAIN.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+compiling 1602.c...
+1602.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+compiling Motor.c...
+MOTOR.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+MOTOR.C(236): warning C291: not every exit path returns a value
+compiling Timer.c...
+TIMER.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+compiling Buzzer.c...
+BUZZER.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_WRITE_CHAR?1602
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_10US?MOTOR
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_GORIGHT_90?MOTOR
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_GOLEFT_180?MOTOR
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_BUZZER?BUZZER
+Program Size: data=31.0 xdata=0 code=2079
+creating hex file from "普罗米修斯"...
+"普罗米修斯" - 0 Error(s), 11 Warning(s).
+Build target '目标 1'
+assembling STARTUP.A51...
+compiling main.c...
+MAIN.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+compiling 1602.c...
+1602.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+compiling Motor.c...
+MOTOR.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+MOTOR.C(236): warning C291: not every exit path returns a value
+compiling Timer.c...
+TIMER.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+compiling Buzzer.c...
+BUZZER.C(1): warning C500: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_WRITE_CHAR?1602
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_10US?MOTOR
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_GORIGHT_90?MOTOR
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_GOLEFT_180?MOTOR
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_BUZZER?BUZZER
+Program Size: data=31.0 xdata=0 code=2079
+creating hex file from "普罗米修斯"...
+"普罗米修斯" - 0 Error(s), 11 Warning(s).

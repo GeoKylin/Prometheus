@@ -1,0 +1,8 @@
+"STARTUP.obj",
+"main.obj",
+"1602.obj",
+"Motor.obj",
+"Timer.obj",
+"Buzzer.obj" 
+TO "ÆÕÂÞÃ×ÐÞË¹" 
+RAMSIZE(256) 

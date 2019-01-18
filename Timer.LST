@@ -1,0 +1,108 @@
+C51 COMPILER V9.00   TIMER                                                                 05/17/2015 10:57:33 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE TIMER
+OBJECT MODULE PLACED IN Timer.OBJ
+COMPILER INVOKED BY: F:\Keil\C51\BIN\C51.EXE Timer.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+*** WARNING C500 IN LINE 1 OF TIMER.C: LICENSE ERROR (R208: RENEW LICENSE ID CODE (LIC))
+
+   1          /*
+   2           * =============================================================
+   3           *
+   4           *       Filename:  Timer.c
+   5           *
+   6           *    Description:  计时器c文件  通过51自带计时器T1记录运行时间
+   7           *
+   8           *        Version:  1.0.1
+   9           *        Created:  2015.5.13
+  10           *       Revision:  first
+  11           *       Compiler:  Keil μVision 4
+  12           *
+  13           *         Author:  杨君英、王锴
+  14           *              Email:  513814330@qq.com
+  15           *                 QQ:  513814330
+  16           *
+  17           * =============================================================
+  18           */
+  19           /*********************************************
+  20                          包含头文件
+  21          **********************************************/ 
+  22          #include        "Timer.h"
+  23          #include        <reg52.h>
+  24          #include    <intrins.h>
+  25          
+  26          uchar SecondL = 0;         //时间秒低位
+  27          uchar SecondH = 0;         //时间秒高位
+  28          uchar MinuteL = 0;         //时间分低位
+  29          uchar MinuteH = 0;         //时间分高位
+  30          /*********************************************
+  31          函数名称： Init_Timer
+  32          函数功能： 初始化单片机的定时1(用于记录运行时间)
+  33          函数输入： 无
+  34          函数输出： 无
+  35          **********************************************/
+  36          void Init_Timer(void)
+  37          {
+  38   1         TMOD = (TMOD&0x0F)|0x10;        //设定T1的工作模式为1
+  39   1         //----装入定时器初值 -----//
+  40   1         TH1 = (65536-50000)/256;        //50ms定时 用于运行计时         
+  41   1         TL1 = (65536-50000)%256;
+  42   1      
+  43   1         IP  = IP&0x08;                  //计时器享有中断优先
+  44   1         ET1 = 1;                        // 定时器1允许中断
+  45   1         TR1 = 1;                        // 启动定时器1 
+  46   1         EA  = 1;                        // 开总中断 
+  47   1      }
+  48          
+  49          /*********************************************
+  50          函数名称： Timer1_ISR
+  51          函数功能： 定时器1中断服务函数,用于产生时钟
+  52          函数输入： 无
+  53          函数输出： 无
+  54          **********************************************/
+C51 COMPILER V9.00   TIMER                                                                 05/17/2015 10:57:33 PAGE 2   
+
+  55          void Timer1_ISR() interrupt 3       
+  56          {
+  57   1              uchar cnt;
+  58   1              TH1 = (65536-50000)/256;              
+  59   1              TL1 = (65536-50000)%256;
+  60   1              cnt++;
+  61   1              if(cnt >= 20)
+  62   1              {
+  63   2                 cnt = 0;
+  64   2                 ++SecondL;
+  65   2                 if(SecondL == 10)
+  66   2                 {
+  67   3                        SecondL = 0;
+  68   3                        ++SecondH;
+  69   3                        if(SecondH == 6)
+  70   3                        {
+  71   4                               SecondH = 0;
+  72   4                               ++MinuteL;
+  73   4                               if(MinuteL == 10)
+  74   4                               {
+  75   5                                      MinuteL = 0;
+  76   5                                      ++MinuteH;
+  77   5                                }
+  78   4                         }
+  79   3                       }
+  80   2               }
+  81   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     83    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      4       1
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  0 ERROR(S)
